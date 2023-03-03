@@ -71,3 +71,120 @@ alphabet.
 ---
 
 ![dog ceo](https://dog.ceo/img/dog.jpg)
+
+
+//Storing for Later
+
+//breedsArray = Object.keys(breedsObj);
+//This returns what was a bunch of breeds (as objects) into breeds as Arrays
+
+/*
+let breedArr = [];
+
+// API URL's
+
+const IMG_URL = "https://dog.ceo/api/breeds/image/random/4";
+const BREED_URL = "https://dog.ceo/api/breeds/list/all";
+
+// Fetch and DOM Manipulation Functions
+
+const fetchDogImg = () => {
+    fetch(IMG_URL)
+    .then(response => response.json())
+    .then((dogImgObj) => {
+        const dogMessageArr = dogImgObj.message;
+        const imageContainer = document.getElementById('dog-image-container');
+        dogMessageArr.forEach(dog => {
+            const imgElement = document.createElement('img');
+            imgElement.src = dog;
+            imgElement.alt = "dog link";
+            imageContainer.appendChild(imgElement);
+        });
+    })
+    .catch(error => console.log(error));
+}
+
+const fetchDogBreed = () => {
+    fetch(BREED_URL)
+    .then(response => response.json())
+    .then((dogBreedObj) => {
+            const dogBreedArr = Object.keys(dogBreedObj.message);
+            const breedList = document.getElementById('dog-breeds');
+            dogBreedArr.forEach(dog => {
+                const liElement = document.createElement('li');
+                liElement.textContent = dog;
+                breedArr.push(dog);
+                breedList.appendChild(liElement);
+                //  LI Color Change OnClick Event Listener
+                liElement.addEventListener("click", function() {
+                    liElement.style.color = "blue";
+                })
+            })
+            dropdownFilter();
+        //     const dropdown = document.getElementById("breed-dropdown")
+        //     dropdown.addEventListener("change", function(event) {
+        //         const selectedLetter = event.target.value;
+        //         if (selectedLetter === "a") {
+        //             console.log("you've selected a!");
+        //         } else if (selectedLetter === "b") {
+        //             console.log("you've selected b!");
+        //         } else if (selectedLetter === "c") {
+        //             console.log("you've selected c!");
+        //         } else if (selectedLetter === "d") {
+        //             console.log("you've selected d!");
+        //         }
+        // })
+        })
+        .catch(error => console.log(error));
+}
+
+const dropdownFilter = () => {
+    const dropdown = document.getElementById("breed-dropdown")
+    dropdown.addEventListener("change", function(event) {
+        const selectedLetter = event.target.value;
+        if (breedArr[].startsWith(selectedLetter) === false) {
+            Element.remove();
+        } else if (breedArr.startsWith(selectedLetter === true)) {
+            console.log("good work!");
+         } //else if (selectedLetter === "c") {
+        //     console.log("you've selected c!");
+        // } else if (selectedLetter === "d") {
+        //     console.log("you've selected d!");
+        // }
+})
+}
+*/
+
+// const filterDogBreeds = () => {
+//     const dropDown = document.getElementById('breed-dropdown');
+//     // const selectedOption = dropDown.value;
+//     dropDown.addEventListener("onchange", function() {
+//         if (dropDown.value == "a") {
+//         console.log("ive been selected!");
+//         } else {
+//             console.log("nope, didn't work");
+//         }
+//     })
+// }
+
+// filterDogBreeds();
+
+// document.addEventListener("onselect", function() {
+//     const dropDown = document.getElementById('breed-dropdown');
+//     const selectedLetter = dropDown.value;
+//     if (selectedLetter = "a") {
+//         console.log("a was selected");
+//     }
+// })
+
+
+
+// On DOM Content Load Event Listeners
+
+/*
+document.addEventListener('DOMContentLoaded', function() {
+    fetchDogImg();
+    fetchDogBreed();
+    // dropdownFilter();
+});
+*/
